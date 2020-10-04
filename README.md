@@ -67,11 +67,5 @@ it's very easy. does not require il2cpp dumper.
  
  You can get/set player memory. ex) `IsImposter` `Position` `IsDead` `InVent` ..etc
 
-## Example Cheat
-
- This is my private cheat :)
- ![](https://github.com/shlifedev/AmongUsPublic/blob/master/Example.PNG) 
- https://www.youtube.com/watch?v=Cfk9_wNjEto&feature=youtu.be
- 
   
  
