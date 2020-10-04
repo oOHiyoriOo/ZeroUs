@@ -1,0 +1,2 @@
+C:\Users\Wolfs\Desktop\AmongUs\ZeroUs\AmongUsMemory\obj\Release\AmongUsMemory.csprojAssemblyReference.cache
+C:\Users\Wolfs\Desktop\AmongUs\ZeroUs\AmongUsMemory\obj\Release\AmongUsMemory.csproj.CoreCompileInputs.cache

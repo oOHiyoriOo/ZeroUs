@@ -1,0 +1,5 @@
+C:\Users\Wolfs\Desktop\AmongUs\ZeroUs\YourCheese\obj\Release\YourCheese.csprojAssemblyReference.cache
+C:\Users\Wolfs\Desktop\AmongUs\ZeroUs\YourCheese\obj\Release\YourCheese.Form1.resources
+C:\Users\Wolfs\Desktop\AmongUs\ZeroUs\YourCheese\obj\Release\YourCheese.HeaderDead.resources
+C:\Users\Wolfs\Desktop\AmongUs\ZeroUs\YourCheese\obj\Release\YourCheese.csproj.GenerateResource.cache
+C:\Users\Wolfs\Desktop\AmongUs\ZeroUs\YourCheese\obj\Release\YourCheese.csproj.CoreCompileInputs.cache
