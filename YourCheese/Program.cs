@@ -93,8 +93,9 @@ namespace YourCheese
 
                     if(Globals.ShowImposter) {
                         if(data.PlayerInfo.Value.IsImpostor == 1) {
-                            var targetPointer = Utils.GetMemberPointer(data.Instance.nameText,typeof(String),"Name");
-                            Cheese.mem.WriteMemory(targetPointer.GetAddress(),"String","<color = red>"+ data.PlayerInfo.Value.PlayerName+ "</color>");
+                            var targetPointer = data.PlayerInfo.Value.PlayerName.GetAddress();
+                            String ImposterName = Color.Red + Name;
+                            Cheese.mem.WriteMemory(targetPointer,"String",ImposterName);
                         }
                     }
 
