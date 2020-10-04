@@ -82,13 +82,20 @@ namespace YourCheese
             }
         }
 
-
-
-
-        private void label1_Click( object sender,EventArgs e ) {
-
+        private void checkBox1_CheckedChanged_1( object sender,EventArgs e ) {
+            if(InstaWin.Checked) {
+                Globals.RainbowSkin = "1";
+            } else {
+                Globals.RainbowSkin = "0";
+            }
         }
 
-
+        private void NKCD_CheckedChanged( object sender,EventArgs e ) {
+            if(InstaWin.Checked) {
+                Globals.NKCD = "1";
+            } else {
+                Globals.NKCD = "0";
+            }
+        }
     }
 }

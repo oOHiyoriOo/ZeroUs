@@ -34,9 +34,10 @@
             this.ReviveMe = new System.Windows.Forms.CheckBox();
             this.MaxLight = new System.Windows.Forms.CheckBox();
             this.InstaWin = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.RainbowSkin = new System.Windows.Forms.CheckBox();
             this.debug = new System.Windows.Forms.Label();
+            this.SeeImposter = new System.Windows.Forms.CheckBox();
+            this.NKCD = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // ShowPlayer
@@ -64,7 +65,7 @@
             // ReviveMe
             // 
             this.ReviveMe.AutoSize = true;
-            this.ReviveMe.Location = new System.Drawing.Point(12, 58);
+            this.ReviveMe.Location = new System.Drawing.Point(12, 54);
             this.ReviveMe.Name = "ReviveMe";
             this.ReviveMe.Size = new System.Drawing.Size(77, 17);
             this.ReviveMe.TabIndex = 2;
@@ -75,7 +76,7 @@
             // MaxLight
             // 
             this.MaxLight.AutoSize = true;
-            this.MaxLight.Location = new System.Drawing.Point(12, 81);
+            this.MaxLight.Location = new System.Drawing.Point(12, 146);
             this.MaxLight.Name = "MaxLight";
             this.MaxLight.Size = new System.Drawing.Size(72, 17);
             this.MaxLight.TabIndex = 3;
@@ -86,7 +87,7 @@
             // InstaWin
             // 
             this.InstaWin.AutoSize = true;
-            this.InstaWin.Location = new System.Drawing.Point(13, 104);
+            this.InstaWin.Location = new System.Drawing.Point(12, 77);
             this.InstaWin.Name = "InstaWin";
             this.InstaWin.Size = new System.Drawing.Size(68, 17);
             this.InstaWin.TabIndex = 4;
@@ -94,20 +95,10 @@
             this.InstaWin.UseVisualStyleBackColor = true;
             this.InstaWin.CheckedChanged += new System.EventHandler(this.KillAll_CheckedChanged);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 105);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Only Works when someone gets killed";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // RainbowSkin
             // 
             this.RainbowSkin.AutoSize = true;
-            this.RainbowSkin.Location = new System.Drawing.Point(12, 127);
+            this.RainbowSkin.Location = new System.Drawing.Point(12, 100);
             this.RainbowSkin.Name = "RainbowSkin";
             this.RainbowSkin.Size = new System.Drawing.Size(92, 17);
             this.RainbowSkin.TabIndex = 6;
@@ -124,15 +115,38 @@
             this.debug.TabIndex = 7;
             this.debug.Text = "Debug:";
             // 
+            // SeeImposter
+            // 
+            this.SeeImposter.AutoSize = true;
+            this.SeeImposter.Location = new System.Drawing.Point(12, 123);
+            this.SeeImposter.Name = "SeeImposter";
+            this.SeeImposter.Size = new System.Drawing.Size(88, 17);
+            this.SeeImposter.TabIndex = 8;
+            this.SeeImposter.Text = "See Imposter";
+            this.SeeImposter.UseVisualStyleBackColor = true;
+            this.SeeImposter.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            // 
+            // NKCD
+            // 
+            this.NKCD.AutoSize = true;
+            this.NKCD.Location = new System.Drawing.Point(12, 169);
+            this.NKCD.Name = "NKCD";
+            this.NKCD.Size = new System.Drawing.Size(106, 17);
+            this.NKCD.TabIndex = 9;
+            this.NKCD.Text = "No Kill Cooldown";
+            this.NKCD.UseVisualStyleBackColor = true;
+            this.NKCD.CheckedChanged += new System.EventHandler(this.NKCD_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(280, 463);
+            this.Controls.Add(this.NKCD);
+            this.Controls.Add(this.SeeImposter);
             this.Controls.Add(this.debug);
             this.Controls.Add(this.RainbowSkin);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.InstaWin);
             this.Controls.Add(this.MaxLight);
             this.Controls.Add(this.ReviveMe);
@@ -156,8 +170,9 @@
         private System.Windows.Forms.CheckBox ReviveMe;
         private System.Windows.Forms.CheckBox MaxLight;
         private System.Windows.Forms.CheckBox InstaWin;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox RainbowSkin;
         private System.Windows.Forms.Label debug;
+        private System.Windows.Forms.CheckBox SeeImposter;
+        private System.Windows.Forms.CheckBox NKCD;
     }
 }

@@ -26,6 +26,8 @@ namespace YourCheese
         public static String InstaWin = "0";
         public static String RainbowSkin = "0";
 
+        public static bool ShowImposter = false;
+        public static String NKCD = "0";
         // save stats in string first to prevent text flickering
         public static String Player = ""; 
         public static String Imposter = "";
@@ -83,6 +85,22 @@ namespace YourCheese
                         }
                     }
 
+                    if(Globals.LightValue == "1") {
+                        var targetPointer = Utils.GetMemberPointer(data.Instance.myLight,typeof(LightSource),"LightRadius");
+                        // Cheese.mem.WriteMemory(targetPointer.GetAddress(),"float",100f.ToString("0.0"));
+                        Cheese.mem.FreezeValue(targetPointer.GetAddress(),"float",500f.ToString("0.0"));
+                    }
+
+                    if(Globals.ShowImposter) {
+                        if(data.PlayerInfo.Value.IsImpostor == 1) {
+                            var targetPointer = Utils.GetMemberPointer(data.Instance.nameText,typeof(String),"Name");
+                            Cheese.mem.WriteMemory(targetPointer.GetAddress(),"String","<color = red>"+ data.PlayerInfo.Value.PlayerName+ "</color>");
+                        }
+                    }
+
+                    if(Globals.NKCD == "1" && data.IsLocalPlayer) {
+                        data.WriteMemory_KillTimer(0);
+                    }
                     //if(Globals.RainbowSkin == "1") {
                     //    data.Instance.killTimer
                     //}
